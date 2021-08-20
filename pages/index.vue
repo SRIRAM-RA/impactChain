@@ -1,5 +1,9 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Navbar />
+    <Welcome />
+    <Teamsection />
+  </div>
 </template>
 
 <script>
