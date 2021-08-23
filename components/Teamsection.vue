@@ -49,6 +49,9 @@ export default {
                     // fetching api JSON details
                     var len = data.length;
                     var roundLength = Math.round(len / 3);
+                    if(roundLength == 0){
+                        roundLength+=1;
+                    }
                     var innercounter = 0;
                     var columnCount = 4;
                     var impactbox = document.getElementById("impactChain");
@@ -56,7 +59,6 @@ export default {
                     impactHead.innerHTML = "Student Team";
                     impactbox.appendChild(impactHead);
                     for (var i = 0; i < roundLength; i++) {          //Row incrementation 
-                        // console.log(i,"entered for 1 ")
                         var chainbox = document.createElement('div');
                         if ((i % 2 != 0) && (i != 0)) {
                             chainbox.className = "chain-even-box";
