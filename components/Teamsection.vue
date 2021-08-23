@@ -486,6 +486,15 @@ hr {
     }
 }
 
+@media screen and (min-width: 380px) and (max-width: 400px){
+    .curved-line-left {
+        margin-left: 4px !important;
+    }
+    .curved-line-right {
+        margin-left: 26px;
+    }
+}
+
 @media screen and (min-width: 400px) and (max-width: 600px) {
     .chain-even-box {
         padding: 97px !important;
