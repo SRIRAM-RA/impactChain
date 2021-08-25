@@ -55,9 +55,9 @@ export default {
                     var innercounter = 0;
                     var columnCount = 4;
                     var impactbox = document.getElementById("impactChain");
-                    var impactHead = document.createElement('h2');
-                    impactHead.innerHTML = "Student Team";
-                    impactbox.appendChild(impactHead);
+                    // var impactHead = document.createElement('h2');
+                    // impactHead.innerHTML = "Student Team";
+                    // impactbox.appendChild(impactHead);
                     for (var i = 0; i < roundLength; i++) {          //Row incrementation 
                         var chainbox = document.createElement('div');
                         if ((i % 2 != 0) && (i != 0)) {
@@ -76,7 +76,7 @@ export default {
                             var img = document.createElement('img');
                             img.className = "student-profile-pic";
                             if (data[innercounter].pic_url == null) {    //if json doesnot have a pic_url default pic will be assigned
-                                img.src = "Avatar1.png";
+                                img.src = "User-Profile-PNG-File.png";
                                 img.style.border = "1px solid black";
                                 img.style.background = "white";
                             }
@@ -137,13 +137,15 @@ export default {
                     }
                 })
                 .then(
-                    document.getElementById("impactChain").scrollIntoView({ behavior: "smooth" })
+                    setTimeout(() => {
+                        document.getElementById("impactChain").scrollIntoView({ behavior: "smooth"})
+                    }, 1000)
                 )
                 .catch((err) => { console.log(err) })
                 // document.getElementById(mentor_id).removeAttribute("onclick");
-                var childnodes = document.getElementById("impactChain");
-                while (childnodes.hasChildNodes()) {
-                    childnodes.removeChild(childnodes.firstChild);
+                var childnode = document.getElementById("impactChain");
+                while (childnode.childNodes.length > 1) {
+                    childnode.removeChild(childnode.lastChild);
                 }
             }
     },
