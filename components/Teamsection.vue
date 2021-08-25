@@ -20,7 +20,7 @@
             </div>
         </section>
         <section class="impact-chain-box" id="impactChain" action="javascript:document.location.reload()">
-            <h2>Student Team</h2>
+            <h2 class="tree-head">Student Team</h2>
         </section>
     </div>
 </template>
@@ -170,6 +170,10 @@ export default {
     background-color: rgb(116,211,11, 0.05);
     display: flex;
     flex-direction: row;
+}
+
+.tree-head{
+    font-family: Poppins;
 }
 
 .section-container-head{
