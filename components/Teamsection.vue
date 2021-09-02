@@ -392,7 +392,7 @@ hr {
 
 @media screen and (max-width: 600px) {
     .section-container {
-        padding: 10px;
+        padding: 3px;
     }
     .section-container-head {
         width: 100%;
@@ -490,6 +490,10 @@ hr {
     .curved-line-right {
         margin-left: 4px;
     }
+    .impact-dp{
+        width: 139px;
+        height: 145px;
+    }
 }
 
 @media screen and (min-width: 380px) and (max-width: 400px){
@@ -540,7 +544,12 @@ hr {
         z-index: -999;
     }
 }
-
+@media screen and (min-width: 400px) and (max-width: 450px){
+     .impact-dp{
+        width: 174px;
+        height: 170px;
+    }
+}
 @media screen and (min-width:700px) and (max-width: 800px) {
     .inner-box {
         width: 100%;
@@ -619,7 +628,11 @@ hr {
         display: none;
     }
 }
-
+@media screen and (min-width:800px) and (max-width: 860px){
+    .impact-box-block{
+        width: 43%;
+    }
+}
 @media screen and (min-width:900px) and (max-width:1200px) {
     .inner-box {
         width: 75%;
@@ -650,6 +663,16 @@ hr {
     }
 }
 
+@media screen and (min-width:900px) and (max-width: 980px){
+    .impact-box-block{
+        width: 41%;
+    }
+}
+@media screen and (min-width:980px) and (max-width: 1050px){
+    .impact-box-block{
+        width: 37%;
+    }
+}
 @media screen and (min-width: 1000px) and (max-width: 1040px) {
     .curved-line-left {
         margin-left: -20%;
@@ -671,6 +694,11 @@ hr {
 @media screen and (min-width: 1200px) and (max-width: 1350px){
     .impact-box-block{
         width: 33%;
+    }
+}
+@media screen and (min-width:1200px) and (max-width: 1260px){
+    .impact-box-block{
+        width: 35%;
     }
 }
 </style>
