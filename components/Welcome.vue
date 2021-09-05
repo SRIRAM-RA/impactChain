@@ -1,9 +1,7 @@
 <template>
     <div class="container-1">
-        <h1 class="welcome-head">We dhodfu oahdoaf odifsdof sdfoishdfov vsoihvdsohv</h1>
-        <p class="welcome-content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-            officia consequat duis
-            enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <h1 class="welcome-head">Impact Chain</h1>
+        <p class="welcome-content">We measure our growth and progress based on the number of students we impact, to help them pursue what they wanted to be. From day one of spotknack, students who were part of the spotknack programs, are always ahead of other students, step out from the crowd, and move forward.</p>
     </div>
 </template>
 
