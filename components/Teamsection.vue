@@ -35,7 +35,7 @@ export default {
     mounted(){
          this.$axios.get('https://menteeapi.spotknack.com/api/impactmentorslist')
         .then((res)=>{
-            // console.log(res.data)
+            console.log(res.data)
             this.userList=res.data;
         })
     },
@@ -47,6 +47,7 @@ export default {
                 .then((response) => response.json())
                 .then((data) => {
                     // fetching api JSON details
+                    console.log(data);
                     var len = data.length;
                     var roundLength = Math.round(len / 3);
                     if(roundLength == 0){
