@@ -663,6 +663,13 @@ hr {
     }
 }
 
+@media screen and (min-width: 700px) and (max-width: 730px){
+    .curved-line-right{
+        margin-left: 56%;
+        width: 445px;
+        height: 117px;
+    }
+}
 @media screen and (min-width:800px) and (max-width: 900px) {
     .inner-box {
         width: 90%;
