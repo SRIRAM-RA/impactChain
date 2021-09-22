@@ -35,7 +35,7 @@ export default {
     mounted(){
          this.$axios.get('https://menteeapi.spotknack.com/api/impactmentorslist')
         .then((res)=>{
-            console.log(res.data)
+            // console.log(res.data)
             this.userList=res.data;
         })
     },
@@ -47,7 +47,6 @@ export default {
                 .then((response) => response.json())
                 .then((data) => {
                     // fetching api JSON details
-                    console.log(data);
                     var len = data.length;
                     var roundLength = Math.round(len / 3);
                     if(roundLength == 0){
@@ -314,7 +313,7 @@ hr {
 .chain-even-box{
     flex-direction: row-reverse !important;
     padding: 35px;
-    padding-right: 150px;
+    padding-right: 145px;
     display: flex;
     align-self: flex-end;
 }
@@ -545,6 +544,76 @@ hr {
         z-index: -999;
     }
 }
+@media screen and (min-width: 600px) and (max-width: 700px){
+    .welcome-content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .inner-box{
+        margin-left: 0px;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .section-container-head{
+        width: 100%;
+    }
+    .impact-box-block{
+        width:50%;
+    }
+    #head-name{
+        font-size: 50px;
+    }
+    #head-content{
+        font-size: 15px;
+    }
+    .chain-odd-box{
+        flex-direction: column;
+        padding-left: 25px; 
+    }
+    .chain-even-box{
+        flex-direction: column !important;
+        padding-right: 120px;
+        padding-right: 50px;
+    }
+    hr{
+        width: 100%;
+        margin: 3.5rem 0;
+        transform: rotate(
+        90deg);
+        margin-left: 1%;
+    }
+    .curved-line-right{
+        width: 235px;
+        height: 40px;
+        transform: rotate(
+        90deg);
+        border: solid 4px #74d30b;
+        border-color: #74d30b transparent transparent transparent;
+        margin-left: 22%;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 640px){
+    .curved-line-right{
+        margin-left: 22% !important;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 660px){
+    .curved-line-right{
+        margin-left: 24% !important;
+    }
+}
+@media screen and (min-width: 660px) and (max-width: 680px){
+    .curved-line-right{
+        margin-left: 26% !important;
+    }
+}
+@media screen and (min-width: 680px) and (max-width: 700px){
+    .curved-line-right{
+        margin-left: 26.1% !important;
+    }
+}
 @media screen and (min-width: 400px) and (max-width: 450px){
      .impact-dp{
         width: 174px;
@@ -683,15 +752,47 @@ hr {
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1444px) {
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
     .chain-odd-box {
         padding-left: 88px;
     }
     .chain-even-box {
-        padding-right: 17px;
+        padding-right: 20px;
     }
 }
-
+@media screen and (min-width: 1350px) and (max-width: 1400px){
+    .chain-odd-box {
+        padding-left: 100px;
+    }
+    .chain-even-box{
+        padding-right: 36px;
+    }
+    .curver-line-right{
+        margin-left: 72.1%;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1450px){
+    .chain-odd-box {
+        padding-left: 100px;
+    }
+    .chain-even-box{
+        padding-right: 65px;
+    }
+    .curver-line-right{
+        margin-left: 72.1%;
+    }
+}
+@media screen and (min-width: 1450px) and (max-width: 1490px){
+    .chain-odd-box {
+        padding-left: 100px;
+    }
+    .chain-even-box{
+        padding-right: 105px;
+    }
+    .curver-line-right{
+        margin-left: 72.1%;
+    }
+}
 @media screen and (min-width: 1200px) and (max-width: 1350px){
     .impact-box-block{
         width: 33%;
