@@ -665,9 +665,9 @@ hr {
 
 @media screen and (min-width: 700px) and (max-width: 730px){
     .curved-line-right{
-        margin-left: 56%;
-        width: 445px;
-        height: 117px;
+        margin-left: 56% !important;
+        width: 445px !important;
+        height: 117px !important;
     }
 }
 @media screen and (min-width:800px) and (max-width: 900px) {
